@@ -21,7 +21,7 @@ window.addEventListener("load",()=>{
     }
 })
 
-
+document.getElementById('search').addEventListener('click', searchByCity);
 function searchByCity(){
     var place= document.getElementById('input').value;
     var urlsearch= `https://api.openweathermap.org/data/2.5/weather?q=${place}&` + `appid=${apikey}`;
